@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* * {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
   box-sizing: border-box;
-} */
+}
+
+html {
+  font-size: 10px;
+}
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
 }
-/* header 영역----- */
+
+h2 {
+  font-family: 'Inter', sans-serif;
+}
+
+/* header 영역------ */
 header {
   width: 100%;
-  height: 44px;
+  height: 4.4rem;
   background-color: rgba(251, 251, 253, 0.8);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-
+  backdrop-filter: blur(2rem);
 }
 
 header nav {
@@ -24,7 +34,7 @@ header nav {
   /* background-color: aqua; */
 }
 
-header nav ul { 
+header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -32,7 +42,7 @@ header nav ul {
 
 header nav ul li a {
   display: block;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #1e1e1e;
   font-weight: 500;
   /* background-color: blueviolet; */
@@ -41,27 +51,32 @@ header nav ul li a {
 /* logo 설정 */
 header nav ul .logo a svg {
   display: block;
-  width: 14px;
-  height: 44px;
-  /* fill: #f5f5f7; */
+  width: 1.4rem;
+  height: 4.4rem;
+}
+
+/* 모바일 메뉴 설정----- */
+.nav-list-mobile {
+  display: none;
 }
 
 /* banner --------- */
 .banner {
-  padding-top: 44px;
+  padding-top: 4.4rem;
   width: 100%;
 }
 
 .banner .banner_txt {
   width: 100%;
-  padding: 12px 0;
+  padding: 1.52rem 0;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
+  letter-spacing: 0.02rem;
 }
 
 .banner .banner_txt span {
-  font-size: 14px;
+  font-size: 1.28rem;
 }
 
 .banner sup {
@@ -69,8 +84,63 @@ header nav ul .logo a svg {
   font-size: 0.8125em;
 }
 
+.banner .banner_link {
+  color: #0066cc;
+}
+
+/* hero 영역 --------------- */
+/* 전체 텍스트 설정 */
+main .hero .txt {
+  text-align: center;
+  padding-top: 4.2rem;
+  line-height: 1.4;
+}
+
+main .hero .txt .headline {
+  font-size: 5.6rem;
+  font-weight: bold;
+  color: #f5f5f7;
+  letter-spacing: -0.2rem;
+}
+
+main .hero .txt .subhead {
+  font-size: 2.8rem;
+  margin-top: 0.08rem;
+  color: #f5f5f7;
+}
+
+main .hero .txt .callout {
+  color: #86868B;
+  font-size: 1.88rem;
+  margin-top: 1.4rem;
+  letter-spacing: 0rem;
+}
+
+/* links에 hover를 주기 위해 z-index값을 설정하였지만 적용되지 않음.
+- position값을 주었더니 z-index값이 적용됨.  */
+main .hero .txt .links {
+  position: relative;
+  margin-top: 15px;
+  z-index: 4;
+}
+
+main .hero .txt .links>a {
+  font-size: 1.95rem;
+  color: #2997ff;
+  letter-spacing: 0.02rem;
+  display: inline-block;
+}
+
+main .hero .txt .links>a:hover {
+  text-decoration: underline;
+}
+
+main .hero .txt .links>.price_btn {
+  margin-left: 35px;
+}
+
 /* iPhone15pro 영역 -------- */
-.iphone15pro {
+.iphone-15-pro {
   width: 100%;
   height: 580px;
   background-color: #000;
@@ -79,12 +149,12 @@ header nav ul .logo a svg {
   margin-bottom: 10px;
 }
 
-.iphone15pro .iphone15pro_contents {
+.iphone-15-pro .iphone15pro_contents {
   width: 100%;
   height: 100%;
 }
 
-.iphone15pro .iphone15pro_contents > a {
+.iphone-15-pro .iphone15pro_contents>a {
   position: absolute;
   z-index: 3;
   width: 100%;
@@ -93,62 +163,22 @@ header nav ul .logo a svg {
   left: 0;
 }
 
-/* 텍스트 설정 */
-.iphone15pro .iphone15pro_contents .txt {
-  text-align: center;
-  padding-top: 47px;
-  line-height: 1.4;
-  letter-spacing: 0px;
-}
-
-.iphone15pro .iphone15pro_contents .txt h2 {
-  font-size: 56px;
-  font-weight: bold;
-  color: #f5f5f7;
-}
-
-.iphone15pro .iphone15pro_contents .txt h3 {
-  font-size: 28px;
-  margin-top: 6px;
-  color: #f5f5f7;
-}
-
-.iphone15pro .iphone15pro_contents .txt p {
-  color: #86868B;
-  font-size: 21px;
-  margin-top: 15px;
-}
-
-.iphone15pro .iphone15pro_contents .txt .links {
-  margin-top: 15px;
-}
-
-.iphone15pro .iphone15pro_contents .txt .links > a {
-  font-size: 21px;
-  color: #2997ff;
-}
-
-.iphone15pro .iphone15pro_contents .txt .links > .price_btn {
-  margin-left: 35px;
-}
-
 /* 이미지 설정 */
-.iphone15pro .iphone15pro_contents .bg_image {
+.iphone-15-pro .iphone15pro_contents .bg_image {
   width: 100%;
-  height: 300px;
-  /* background-color: #2997ff; */
+  height: 340px;
 }
 
-.iphone15pro .iphone15pro_contents .bg_image .iphone15pro_img {
+.iphone-15-pro .iphone15pro_img {
   width: 100%;
   height: 100%;
-  background-image: url(../img/iphone15pro_bg.jpg);
+  background-image: url(../img/iphone15pro_large.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
 /* iPhone15 영역 -------- */
-.iphone15 {
+.iphone-15 {
   width: 100%;
   height: 580px;
   background-color: #f5f5f5;
@@ -157,12 +187,12 @@ header nav ul .logo a svg {
   margin-bottom: 10px;
 }
 
-.iphone15 .iphone15_contents {
+.iphone-15 .iphone15_contents {
   width: 100%;
   height: 100%;
 }
 
-.iphone15 .iphone15_contents > a {
+.iphone-15 .iphone15_contents>a {
   position: absolute;
   z-index: 3;
   width: 100%;
@@ -171,56 +201,33 @@ header nav ul .logo a svg {
   left: 0;
 }
 
-/* 텍스트 설정 */
-.iphone15 .iphone15_contents .txt {
-  text-align: center;
-  padding-top: 47px;
-  line-height: 1.4;
-  letter-spacing: 0px;
-}
-
-.iphone15 .iphone15_contents .txt h2 {
-  font-size: 56px;
-  font-weight: bold;
+/* 텍스트 컬러 설정 */
+.iphone-15 .iphone15_contents .txt .headline {
   color: #1d1d1f;
 }
 
-.iphone15 .iphone15_contents .txt h3 {
-  font-size: 28px;
-  margin-top: 6px;
+.iphone-15 .iphone15_contents .txt .subhead {
   color: #1d1d1f;
 }
 
-.iphone15 .iphone15_contents .txt p {
-  color: #86868B;
-  font-size: 21px;
-  margin-top: 15px;
+.iphone-15 .iphone15_contents .txt .callout {
+  color: #6e6e73;
 }
 
-.iphone15 .iphone15_contents .txt .links {
-  margin-top: 15px;
-}
-
-.iphone15 .iphone15_contents .txt .links > a {
-  font-size: 21px;
-  color: #2997ff;
-}
-
-.iphone15 .iphone15_contents .txt .links > .price_btn {
-  margin-left: 35px;
+.iphone-15 .iphone15_contents .txt .links>a {
+  color: #0066cc;
 }
 
 /* 이미지 설정 */
-.iphone15 .iphone15_contents .bg_image {
+.iphone-15 .iphone15_contents .bg_image {
   width: 100%;
-  height: 320px;
-  /* background-color: #2997ff; */
+  height: 340px;
 }
 
-.iphone15 .iphone15_contents .bg_image .iphone15_img {
+.iphone-15 .iphone15_contents .bg_image .iphone15_img {
   width: 100%;
   height: 100%;
-  background-image: url(../img/iphone15_bg.jpg);
+  background-image: url(../img/iphone15_large.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -239,7 +246,7 @@ header nav ul .logo a svg {
   height: 100%;
 }
 
-.apple-watch .apple-watch_contents > a {
+.apple-watch .apple-watch_contents>a {
   position: absolute;
   z-index: 3;
   width: 100%;
@@ -247,57 +254,73 @@ header nav ul .logo a svg {
   top: 0;
   left: 0;
 }
-
-/* 텍스트 설정 */
-.apple-watch .apple-watch_contents .txt {
-  text-align: center;
-  padding-top: 47px;
-  line-height: 1.4;
-  letter-spacing: 0px;
+.apple-watch .apple-watch_contents .logo-img {
+  /* width: ; */
 }
-
-.apple-watch .apple-watch_contents .txt h2 {
-  font-size: 56px;
-  font-weight: bold;
-  color: #f5f5f7;
-}
-
-.apple-watch .apple-watch_contents .txt h3 {
-  font-size: 28px;
-  margin-top: 6px;
-  color: #f5f5f7;
-}
-
-.apple-watch .apple-watch_contents .txt p {
-  color: #86868B;
-  font-size: 21px;
-  margin-top: 15px;
-}
-
-.apple-watch .apple-watch_contents .txt .links {
-  margin-top: 15px;
-}
-
-.apple-watch .apple-watch_contents .txt .links > a {
-  font-size: 21px;
-  color: #2997ff;
-}
-
-.apple-watch .apple-watch_contents .txt .links > .price_btn {
-  margin-left: 35px;
-}
-
 /* 이미지 설정 */
 .apple-watch .apple-watch_contents .bg_image {
   width: 100%;
-  height: 320px;
-  /* background-color: #2997ff; */
+  height: 340px;
 }
 
-.apple-watch .apple-watch_contents .bg_image .iphone15_img {
+.apple-watch .apple-watch_contents .bg_image .apple-watch_img {
   width: 100%;
   height: 100%;
-  background-image: url(../img/apple_watch.jpg);
+  background-image: url(../img/apple_watch_large.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+/* 미디어쿼리 영역 ---------------- */
+@media screen and (max-width : 1068px) {
+
+  /* hero영역 height 설정 */
+  .iphone-15-pro,
+  .iphone-15,
+  .apple-watch {
+    height: 650px;
+  }
+
+  /* 이미지 설정 */
+  .iphone-15-pro .iphone15pro_contents .bg_image {
+    height: 420px;
+  }
+
+  .iphone-15-pro .iphone15pro_img {
+    background-image: url(../img/iphone15pro_medium.jpg);
+  }
+
+  .iphone-15 .iphone15_contents .bg_image {
+    height: 420px;
+  }
+
+  .iphone-15 .iphone15_contents .bg_image .iphone15_img {
+    background-image: url(../img/iphone15_medium.jpg);
+    
+  }
+
+  .apple-watch .apple-watch_contents .bg_image {
+    height: 420px;
+  }
+
+  .apple-watch .apple-watch_contents .bg_image .apple-watch_img {
+    background-size: 3818px 794px;
+  }
+
+  /* 텍스트 영역 설정 */
+  main .hero .txt {
+    padding-top: 6.1rem;
+  }
+
+  main .hero .txt .headline {
+    font-size: 4.8rem;
+    line-height: 1.2;
+    letter-spacing: -0.2rem;
+  }
+
+  main .hero .txt .subhead {
+    font-size: 2.2rem;
+    margin-top: .6rem;
+    line-height: 1.3;
+  }
 }
