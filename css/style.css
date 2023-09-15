@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -48,6 +49,10 @@ header nav ul li a {
   /* background-color: blueviolet; */
 }
 
+header nav ul li a:hover {
+  color: #000;
+}
+
 /* logo 설정 */
 header nav ul .logo a svg {
   display: block;
@@ -90,53 +95,67 @@ header nav ul .logo a svg {
 
 /* hero 영역 --------------- */
 /* 전체 텍스트 설정 */
-main .hero .txt {
+main .hero .title_wrap {
   text-align: center;
   padding-top: 4.2rem;
   line-height: 1.4;
 }
 
-main .hero .txt .headline {
+main .title_wrap .headline {
   font-size: 5.6rem;
   font-weight: bold;
   color: #f5f5f7;
   letter-spacing: -0.2rem;
 }
 
-main .hero .txt .subhead {
+main .hero .title_wrap .subhead {
   font-size: 2.8rem;
   margin-top: 0.08rem;
   color: #f5f5f7;
 }
 
-main .hero .txt .callout {
+main .hero .title_wrap .callout {
   color: #86868B;
   font-size: 1.88rem;
   margin-top: 1.4rem;
   letter-spacing: 0rem;
 }
 
-/* links에 hover를 주기 위해 z-index값을 설정하였지만 적용되지 않음.
+/* cta에 hover를 주기 위해 z-index값을 설정하였지만 적용되지 않음.
 - position값을 주었더니 z-index값이 적용됨.  */
-main .hero .txt .links {
+main .title_wrap .cta {
   position: relative;
-  margin-top: 15px;
+  margin-top: 1.5rem;
   z-index: 4;
 }
 
-main .hero .txt .links>a {
+main .title_wrap .cta>a {
   font-size: 1.95rem;
   color: #2997ff;
   letter-spacing: 0.02rem;
   display: inline-block;
 }
 
-main .hero .txt .links>a:hover {
+main .iphone-15 .cta>a {
+  color: #0066cc;
+}
+
+main .title_wrap .cta>a:hover {
   text-decoration: underline;
 }
 
-main .hero .txt .links>.price_btn {
+main .title_wrap .cta>.cta-links:nth-child(2) {
   margin-left: 35px;
+}
+
+/* 전체 링크 영역 설정 */
+main .container>a {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* iPhone15pro 영역 -------- */
@@ -149,30 +168,21 @@ main .hero .txt .links>.price_btn {
   margin-bottom: 10px;
 }
 
-.iphone-15-pro .iphone15pro_contents {
+.iphone-15-pro .container {
   width: 100%;
   height: 100%;
-}
-
-.iphone-15-pro .iphone15pro_contents>a {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 /* 이미지 설정 */
-.iphone-15-pro .iphone15pro_contents .bg_image {
+.iphone-15-pro .container .image_wrap {
   width: 100%;
   height: 340px;
 }
 
-.iphone-15-pro .iphone15pro_img {
+.iphone-15-pro .iphone-15-pro-image {
   width: 100%;
   height: 100%;
-  background-image: url(../img/iphone15pro_large.jpg);
+  background-image: url(../img/hero_iphone15pro_large.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -187,47 +197,38 @@ main .hero .txt .links>.price_btn {
   margin-bottom: 10px;
 }
 
-.iphone-15 .iphone15_contents {
+.iphone-15 .container {
   width: 100%;
   height: 100%;
-}
-
-.iphone-15 .iphone15_contents>a {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 /* 텍스트 컬러 설정 */
-.iphone-15 .iphone15_contents .txt .headline {
+.iphone-15 .container .title_wrap .headline {
   color: #1d1d1f;
 }
 
-.iphone-15 .iphone15_contents .txt .subhead {
+.iphone-15 .container .title_wrap .subhead {
   color: #1d1d1f;
 }
 
-.iphone-15 .iphone15_contents .txt .callout {
+.iphone-15 .container .title_wrap .callout {
   color: #6e6e73;
 }
 
-.iphone-15 .iphone15_contents .txt .links>a {
+.iphone-15 .container .title_wrap .cta>a {
   color: #0066cc;
 }
 
 /* 이미지 설정 */
-.iphone-15 .iphone15_contents .bg_image {
+.iphone-15 .container .image_wrap {
   width: 100%;
   height: 340px;
 }
 
-.iphone-15 .iphone15_contents .bg_image .iphone15_img {
+.iphone-15 .container .image_wrap .iphone-15-image {
   width: 100%;
   height: 100%;
-  background-image: url(../img/iphone15_large.jpg);
+  background-image: url(../img/hero_iphone15_large.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -241,35 +242,100 @@ main .hero .txt .links>.price_btn {
   position: relative;
 }
 
-.apple-watch .apple-watch_contents {
+.apple-watch .container {
   width: 100%;
   height: 100%;
 }
 
-.apple-watch .apple-watch_contents>a {
-  position: absolute;
-  z-index: 3;
+.apple-watch .container .logo-image {
+  width: 190px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: .8rem;
+}
+
+.apple-watch .container .logo-image img {
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
 }
-.apple-watch .apple-watch_contents .logo-img {
-  /* width: ; */
-}
+
 /* 이미지 설정 */
-.apple-watch .apple-watch_contents .bg_image {
+.apple-watch .container .image_wrap {
   width: 100%;
   height: 340px;
 }
 
-.apple-watch .apple-watch_contents .bg_image .apple-watch_img {
+.apple-watch .container .image_wrap .apple-watch-image {
   width: 100%;
   height: 100%;
-  background-image: url(../img/apple_watch_large.jpg);
+  background-image: url(../img/hero_apple_watch_large.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+
+/* promo 영역 (grid 적용) ----------- */
+.promo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(580px, auto);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.promo>div {
+  background-color: #f5f5f7;
+  position: relative;
+}
+
+/* 타이틀 영역 전체 설정 */
+main .promo .title_wrap {
+  text-align: center;
+  padding-top: 4.2rem;
+  line-height: 1.4;
+}
+
+main .promo .title_wrap .headline {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+main .macbook-air-15 .headline,
+main .ipad .headline {
+  color: #1d1d1f;
+}
+
+main .promo .title_wrap .subhead {
+  font-size: 2.1rem;
+}
+
+main .promo .title_wrap .callout {
+  font-size: 1.7rem;
+  color: #6e6e73;
+}
+
+main .promo .title_wrap .cta {
+  margin-top: 1.4rem;
+}
+
+main .promo .title_wrap .cta>a {
+  font-size: 1.7rem;
+  color: #06c;
+}
+
+/* airpods-pro영역 텍스트 컬러 지정 */
+main .promo .airpods-pro .title_wrap .subhead {
+  color: #f5f5f7;
+}
+
+main .promo .airpods-pro .title_wrap .cta>a {
+  color: #2997ff;
+}
+/* airpods-pro 배경색 설정 */
+main .promo .airpods-pro {
+  background-color: #000;
+}
+
+
 
 /* 미디어쿼리 영역 ---------------- */
 @media screen and (max-width : 1068px) {
@@ -282,43 +348,43 @@ main .hero .txt .links>.price_btn {
   }
 
   /* 이미지 설정 */
-  .iphone-15-pro .iphone15pro_contents .bg_image {
+  .iphone-15-pro .container .image_wrap {
     height: 420px;
   }
 
-  .iphone-15-pro .iphone15pro_img {
-    background-image: url(../img/iphone15pro_medium.jpg);
+  .iphone-15-pro .iphone-15-pro-image {
+    background-image: url(../img/hero_iphone15pro_medium.jpg);
   }
 
-  .iphone-15 .iphone15_contents .bg_image {
+  .iphone-15 .container .image_wrap {
     height: 420px;
   }
 
-  .iphone-15 .iphone15_contents .bg_image .iphone15_img {
-    background-image: url(../img/iphone15_medium.jpg);
-    
+  .iphone-15 .container .image_wrap .iphone-15-image {
+    background-image: url(../img/hero_iphone15_medium.jpg);
+
   }
 
-  .apple-watch .apple-watch_contents .bg_image {
-    height: 420px;
+  .apple-watch .container .image_wrap {
+    height: 400px;
   }
 
-  .apple-watch .apple-watch_contents .bg_image .apple-watch_img {
-    background-size: 3818px 794px;
+  .apple-watch .container .image_wrap .apple-watch-image {
+    background-size: 3850px 794px;
   }
 
   /* 텍스트 영역 설정 */
-  main .hero .txt {
+  main .hero .title_wrap {
     padding-top: 6.1rem;
   }
 
-  main .hero .txt .headline {
+  main .hero .title_wrap .headline {
     font-size: 4.8rem;
     line-height: 1.2;
     letter-spacing: -0.2rem;
   }
 
-  main .hero .txt .subhead {
+  main .hero .title_wrap .subhead {
     font-size: 2.2rem;
     margin-top: .6rem;
     line-height: 1.3;
