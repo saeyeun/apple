@@ -1,0 +1,504 @@
+/* 미디어쿼리 영역 ---------------- */
+@media screen and (max-width : 1068px) {
+
+  /* hero 영역------ */
+  /* height 설정 */
+  .iphone-15-pro,
+  .iphone-15,
+  .apple-watch {
+    height: 650px;
+  }
+
+  /* hero 이미지 설정 */
+  /* height 설정 */
+  .iphone-15-pro .container .image_wrap {
+    height: 420px;
+  }
+
+  .iphone-15 .container .image_wrap {
+    height: 420px;
+  }
+
+  .apple-watch .container .image_wrap {
+    height: 400px;
+  }
+
+  /* 이미지 설정 */
+  .iphone-15-pro .iphone-15-pro-image {
+    background-image: url(../img/hero_iphone15pro_medium.jpg);
+  }
+
+  .iphone-15 .container .image_wrap .iphone-15-image {
+    background-image: url(../img/hero_iphone15_medium.jpg);
+
+  }
+
+  .apple-watch .container .image_wrap .apple-watch-image {
+    background-size: 3850px 794px;
+  }
+
+  /* 텍스트 영역 설정 */
+  main .hero .title_wrap {
+    padding-top: 6.1rem;
+  }
+
+  main .hero .title_wrap .headline {
+    font-size: 4.8rem;
+    line-height: 1.2;
+    letter-spacing: -0.2rem;
+  }
+
+  main .hero .title_wrap .subhead {
+    font-size: 2.2rem;
+    margin-top: .6rem;
+    line-height: 1.3;
+  }
+
+  /* promo 영역 -----*/
+  .promo {
+    grid-template-rows: repeat(3, 490px);
+  }
+
+  /* 타이틀 영역 전체 설정 */
+  main .promo .title_wrap {
+    padding-top: 4.2rem;
+    line-height: 1.4;
+  }
+
+  main .promo .title_wrap .headline {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+  }
+
+  main .promo .title_wrap .subhead {
+    font-size: 1.8rem;
+  }
+
+  main .promo .title_wrap .callout {
+    font-size: 1.8rem;
+    margin-top: 1.1rem;
+  }
+
+  main .promo .title_wrap .cta {
+    margin-top: 1.2rem;
+  }
+
+  main .promo .title_wrap .cta>a {
+    font-size: 1.5rem;
+    color: #06c;
+  }
+
+  /* headline 이미지 설정 */
+  /* hedaline 이미지 크기 설정 */
+  main .promo .apple-watch-ultra-2 .logo-image,
+  main .promo .apple-watch-se .logo-image {
+    width: 107px;
+    height: 41px;
+    margin: 0 auto;
+  }
+
+  main .promo .carbon-neutral .logo-image {
+    width: 259px;
+    height: 51px;
+    margin: 0 auto;
+  }
+
+  /* hedaline 이미지 삽입 */
+  main .promo .apple-watch-ultra-2 .logo-image figure {
+    background-image: url(../img/title_apple_watch_ultra2_medium.png);
+  }
+
+  main .promo .carbon-neutral .logo-image figure {
+    background-image: url(../img/title_carbon_neutral_medium.png);
+  }
+
+  main .promo .apple-watch-se .logo-image figure {
+    background-image: url(../img/title_apple_watch_se_medium.png);
+  }
+
+  /* image_wrap height값 설정 */
+  main .promo .image_wrap {
+    width: 100%;
+    height: 286px;
+  }
+
+  main .promo .airpods-pro .image_wrap {
+    width: 100%;
+    height: 310px;
+  }
+
+  main .promo .macbook-air-15 .image_wrap,
+  main .promo .ipad .image_wrap {
+    width: 100%;
+    height: 324px;
+  }
+
+  /* image_wrap 각 이미지 삽입 */
+  main .promo .apple-watch-ultra-2 .apple-watch-ultra-2-image {
+    background-image: url(../img/promo_apple_watch_ultra2_medium.jpg);
+  }
+
+  main .promo .carbon-neutral .carbon-neutral-image {
+    background-image: url(../img/promo_carbon_neutral_medium.jpg);
+  }
+
+  main .promo .apple-watch-se .apple-watch-se-image {
+    background-image: url(../img/promo_apple_watch_se_medium.jpg);
+  }
+
+  main .promo .airpods-pro .airpods-pro-image {
+    background-image: url(../img/promo_airpods_pro_order_medium.jpg);
+  }
+
+  main .promo .macbook-air-15 .macbook-air-15-image {
+    background-image: url(../img/promo_macbook_air_15_medium.jpg);
+  }
+
+  main .promo .ipad .ipad-image {
+    background-image: url(../img/promo_ipad_medium.jpg);
+  }
+
+  /* 푸터영역 ----- */
+  footer .content {
+    padding: 0 14px;
+  }
+}
+
+/* 모바일 navigaion 설정 */
+@media screen and (max-width : 833px) {
+  header {
+    height: 4.8rem;
+    padding: 0;
+    background-color: rgba(251, 251, 253, 0.8);
+  }
+
+  header .nav-list {
+    margin-top: 0;
+  }
+
+  header nav .nav-list-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+  }
+
+  header .nav-list-mobile .nav-items {
+    display: flex;
+  }
+
+  /* 모바일 메뉴 버튼 버튼 */
+  .mobile-menu {
+    position: relative;
+    width: 4.8rem;
+    height: 4.8rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .mobile-menu .line {
+    position: absolute;
+    background-color: black;
+    width: 1.7rem;
+    height: 1.6px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .mobile-menu-top {
+    margin-top: 10px;
+  }
+
+  .mobile-menu-bottom {
+    margin-top: -10px;
+  }
+
+  .mobile-menu.active .mobile-menu-top {
+    margin-top: 0;
+    transform: rotate(45deg);
+  }
+
+  .mobile-menu.active .mobile-menu-bottom {
+    margin-top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* 모바일 메뉴 설정 */
+  header .nav-list-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    background-color: #fff;
+    display: block;
+    transform: translateY(-100%);
+    padding-top: 5rem;
+    padding-left: 4.8rem;
+  }
+
+  header .nav-list-desktop.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  header .nav-list-desktop li {
+    width: 100%;
+  }
+
+  header .nav-list-desktop li:hover {
+    background-color: aqua;
+  }
+
+  header .nav-list-desktop li a {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+
+  /* logo 설정 */
+  header .logo a {
+    padding: 0 1.6rem;
+  }
+
+  header.active .logo a {
+    display: none;
+  }
+
+  /* nav-items 설정 */
+  header .nav-items a {
+    width: 4.8rem;
+    height: 4.8rem;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  header.active .nav-items a {
+    display: none;
+  }
+
+  /* 푸터영역 설정-------- */
+  footer .footer-nav-list{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-nav .footer-nav-item {
+    padding: 0;
+  }
+
+  footer .footer-nav-item ul {
+    display: none;
+  }
+
+  footer .footer-nav-item .footer-nav-item-1,
+  footer .footer-nav-item .footer-nav-item-2 {
+    padding: 0;
+  }
+
+  footer .footer-bottom>div {
+    display: block;
+  }
+
+  footer .footer-bottom-legal ul {
+    margin: 0;
+    margin-top: 0.6rem;
+  } 
+}
+
+@media screen and (max-width : 734px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner_txt {
+    max-width: 390px;
+  }
+
+  /* hero 영역 설정 ----- */
+  .iphone-15-pro,
+  .iphone-15,
+  .apple-watch {
+    height: 500px;
+  }
+
+  .iphone-15-pro .container .image_wrap {
+    height: 420px;
+  }
+
+  .iphone-15 .container .image_wrap {
+    height: 420px;
+  }
+
+  .apple-watch .container .image_wrap {
+    height: 316px;
+  }
+
+  /* 이미지 설정 */
+  .iphone-15-pro .iphone-15-pro-image {
+    background-image: url(../img/hero_iphone15pro_small.jpg);
+  }
+
+  .iphone-15 .container .image_wrap .iphone-15-image {
+    background-image: url(../img/hero_iphone15_small.jpg);
+
+  }
+
+  .apple-watch .container .image_wrap .apple-watch-image {
+    background-image: url(../img/hero_apple_watch_small.jpg);
+    background-size: auto;
+  }
+
+  /* 텍스트 영역 설정 */
+  main .hero .title_wrap {
+    padding-top: 3.7rem;
+  }
+
+  main .hero .title_wrap .headline {
+    font-size: 3.2rem;
+  }
+
+  main .hero .title_wrap .subhead {
+    font-size: 1.9rem;
+    font-weight: 400;
+  }
+
+  main .hero .title_wrap .callout {
+    font-size: 1.7rem;
+    margin-top: 1.3rem;
+    letter-spacing: 0rem;
+  }
+
+  main .title_wrap .cta {
+    margin-top: 1.4rem;
+  }
+
+  main .title_wrap .cta>a {
+    font-size: 1.7rem;
+  }
+
+  /* headline 로고 이미지 설정 */
+  main .apple-watch .logo-image {
+    width: 110px;
+    height: 42px;
+  }
+
+  main .apple-watch .logo-image figure {
+    background-image: url(../img/title_apple_watch_series_9_small.png);
+  }
+
+  /* promo 영역 ---------- */
+  .promo {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0rem;
+  }
+
+  /* 타이틀 영역 전체 설정 */
+  main .promo .title_wrap {
+    padding-top: 4.8rem;
+    line-height: 1.4;
+  }
+
+  main .promo .title_wrap .headline {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+  }
+
+  main .promo .title_wrap .subhead {
+    font-size: 1.8rem;
+  }
+
+  main .promo .title_wrap .callout {
+    font-size: 1.8rem;
+    margin-top: 1.1rem;
+  }
+
+  main .promo .title_wrap .cta {
+    margin-top: 1.2rem;
+  }
+
+  main .promo .title_wrap .cta>a {
+    font-size: 1.5rem;
+    color: #06c;
+  }
+
+  /* headline 이미지 설정 */
+  /* hedaline 이미지 크기 설정 */
+  main .promo .apple-watch-ultra-2 .logo-image,
+  main .promo .apple-watch-se .logo-image {
+    width: 110px;
+    height: 42px;
+    margin: 0 auto;
+  }
+
+  main .promo .carbon-neutral .logo-image {
+    width: 262px;
+    height: 51px;
+    margin: 0 auto;
+  }
+
+  /* hedaline 이미지 삽입 */
+  main .promo .apple-watch-ultra-2 .logo-image figure {
+    background-image: url(../img/title_apple_watch_ultra2_small.png);
+  }
+
+  main .promo .carbon-neutral .logo-image figure {
+    background-image: url(../img/title_carbon_neutral_small.png);
+  }
+
+  main .promo .apple-watch-se .logo-image figure {
+    background-image: url(../img/title_apple_watch_se_small.png);
+  }
+
+  /* image_wrap height값 설정 */
+  main .promo .image_wrap {
+    width: 100%;
+    height: 306px;
+  }
+
+  main .promo .airpods-pro .image_wrap {
+    width: 100%;
+    height: 292px;
+  }
+
+  main .promo .macbook-air-15 .image_wrap,
+  main .promo .ipad .image_wrap {
+    width: 100%;
+    height: 324px;
+  }
+
+  /* image_wrap 각 이미지 삽입 */
+  main .promo .apple-watch-ultra-2 .apple-watch-ultra-2-image {
+    background-image: url(../img/promo_apple_watch_ultra2_small.jpg);
+  }
+
+  main .promo .carbon-neutral .carbon-neutral-image {
+    background-image: url(../img/promo_carbon_neutral_small.jpg);
+  }
+
+  main .promo .apple-watch-se .apple-watch-se-image {
+    background-image: url(../img/promo_apple_watch_se_small.jpg);
+  }
+
+  main .promo .airpods-pro .airpods-pro-image {
+    background-image: url(../img/promo_airpods_pro_small.jpg);
+  }
+
+  main .promo .macbook-air-15 .macbook-air-15-image {
+    background-image: url(../img/promo_macbook_air_15_small.jpg);
+  }
+  /* 푸터 영역------ */
+
+}

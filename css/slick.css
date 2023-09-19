@@ -1,0 +1,174 @@
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 680px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+
+    margin: 0 auto;
+
+}
+
+.slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 680px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    overflow: hidden;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+
+    /*이미지 사이 여백 */
+    margin: 0 10px;
+
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    /* 이미지 크기 */
+    width: 1088px;
+    height: 670px;
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* 미디어쿼리 구간 ------------------------- */
+@media screen and (max-width : 1068px) {
+
+    /* mainSlide (slick-slider) 영역 설정 */
+    .slick-slider {
+        width: 100%;
+        height: 380px;
+    }
+
+    .slick-list {
+        width: 100%;
+        height: 380px;
+    }
+
+    .slick-slide img {
+        /* 이미지 크기 */
+        width: 704px;
+        height: 367px;
+        display: block;
+    }
+}
+
+@media screen and (max-width : 734px) {
+    /* mainSlide (slick-slider) 영역 설정 */
+    .slick-slider {
+        width: 100%;
+        height: 500px;
+    }
+
+    .slick-list {
+        width: 100%;
+        height: 500px;
+    }
+
+    .slick-slide img {
+        /* 이미지 크기 */
+        width: 274px;
+        height: 495px;
+        display: block;
+    }
+}
