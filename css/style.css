@@ -56,13 +56,13 @@ header nav {
   /* background-color: aqua; */
 }
 
-header .nav-list {
+header .nav_list {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-header .nav-list li a {
+header .nav_list li a {
   display: block;
   font-size: 1.2rem;
   color: #1e1e1e;
@@ -70,12 +70,12 @@ header .nav-list li a {
   /* background-color: blueviolet; */
 }
 
-header .nav-list li a:hover {
+header .nav_list li a:hover {
   color: #000;
 }
 
 /* 모바일 메뉴 설정----- */
-header nav .nav-list-mobile {
+header nav .nav_list_mobile {
   display: none;
 }
 
@@ -162,7 +162,7 @@ main .title_wrap .cta>a {
   display: inline-block;
 }
 
-main .iphone-15 .cta>a {
+main .iphone_15 .cta>a {
   color: #0066cc;
 }
 
@@ -170,24 +170,24 @@ main .title_wrap .cta>a:hover {
   text-decoration: underline;
 }
 
-main .title_wrap .cta>.cta-links:nth-child(2) {
+main .title_wrap .cta>.cta_links:nth-child(2) {
   margin-left: 35px;
 }
 
 /* headline 로고 이미지 설정 */
-main .apple-watch .logo-image {
+main .apple_watch .logo_image {
   width: 190px;
   height: 72px;
   margin: 0 auto;
 }
 
-main .apple-watch .logo-image figure {
+main .apple_watch .logo_image figure {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 
-main .apple-watch .logo-image figure {
+main .apple_watch .logo_image figure {
   background-image: url(../img/title_apple_watch_series_9_large.png);
 }
 
@@ -202,7 +202,7 @@ main .container>a {
 }
 
 /* iPhone15pro 영역 -------- */
-.iphone-15-pro {
+.iphone_15_pro {
   width: 100%;
   height: 580px;
   background-color: #000;
@@ -211,18 +211,18 @@ main .container>a {
   margin-bottom: 10px;
 }
 
-.iphone-15-pro .container {
+.iphone_15_pro .container {
   width: 100%;
   height: 100%;
 }
 
 /* 이미지 설정 */
-.iphone-15-pro .container .image_wrap {
+.iphone_15_pro .container .image_wrap {
   width: 100%;
   height: 340px;
 }
 
-.iphone-15-pro .iphone-15-pro-image {
+.iphone_15_pro .iphone_15_pro_image {
   width: 100%;
   height: 100%;
   background-image: url(../img/hero_iphone15pro_large.jpg);
@@ -231,7 +231,7 @@ main .container>a {
 }
 
 /* iPhone15 영역 -------- */
-.iphone-15 {
+.iphone_15 {
   width: 100%;
   height: 580px;
   background-color: #f5f5f5;
@@ -240,35 +240,35 @@ main .container>a {
   margin-bottom: 10px;
 }
 
-.iphone-15 .container {
+.iphone_15 .container {
   width: 100%;
   height: 100%;
 }
 
 /* 텍스트 컬러 설정 */
-.iphone-15 .container .title_wrap .headline {
+.iphone_15 .container .title_wrap .headline {
   color: #1d1d1f;
 }
 
-.iphone-15 .container .title_wrap .subhead {
+.iphone_15 .container .title_wrap .subhead {
   color: #1d1d1f;
 }
 
-.iphone-15 .container .title_wrap .callout {
+.iphone_15 .container .title_wrap .callout {
   color: #6e6e73;
 }
 
-.iphone-15 .container .title_wrap .cta>a {
+.iphone_15 .container .title_wrap .cta>a {
   color: #0066cc;
 }
 
 /* 이미지 설정 */
-.iphone-15 .container .image_wrap {
+.iphone_15 .container .image_wrap {
   width: 100%;
   height: 340px;
 }
 
-.iphone-15 .container .image_wrap .iphone-15-image {
+.iphone_15 .container .image_wrap .iphone_15_image {
   width: 100%;
   height: 100%;
   background-image: url(../img/hero_iphone15_large.jpg);
@@ -277,7 +277,7 @@ main .container>a {
 }
 
 /* apple watch 영역 -------- */
-.apple-watch {
+.apple_watch {
   width: 100%;
   height: 580px;
   background-color: #000;
@@ -285,18 +285,18 @@ main .container>a {
   position: relative;
 }
 
-.apple-watch .container {
+.apple_watch .container {
   width: 100%;
   height: 100%;
 }
 
 /* 이미지 설정 */
-.apple-watch .container .image_wrap {
+.apple_watch .container .image_wrap {
   width: 100%;
   height: 340px;
 }
 
-.apple-watch .container .image_wrap .apple-watch-image {
+.apple_watch .container .image_wrap .apple_watch_image {
   width: 100%;
   height: 100%;
   background-image: url(../img/hero_apple_watch_large.jpg);
@@ -338,7 +338,7 @@ main .promo .title_wrap .headline {
   width: 100%;
 }
 
-main .macbook-air-15 .headline,
+main .macbook_air_15 .headline,
 main .ipad .headline {
   color: #1d1d1f;
 }
@@ -366,49 +366,49 @@ main .promo .title_wrap .cta>a {
 
 /* headline 이미지 설정 */
 /* hedaline 이미지 크기 설정 */
-main .promo .apple-watch-ultra-2 .logo-image,
-main .promo .apple-watch-se .logo-image {
+main .promo .apple_watch_ultra_2 .logo_image,
+main .promo .apple_watch_se .logo_image {
   width: 137px;
   height: 52px;
   margin: 0 auto;
 }
 
-main .promo .carbon-neutral .logo-image {
+main .promo .carbon_neutral .logo_image {
   width: 315px;
   height: 61px;
   margin: 0 auto;
 }
 
-main .promo .container .logo-image figure {
+main .promo .container .logo_image figure {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 
 /* hedaline 이미지 삽입 */
-main .promo .apple-watch-ultra-2 .logo-image figure {
+main .promo .apple_watch_ultra_2 .logo_image figure {
   background-image: url(../img/title_apple_watch_ultra2_large.png);
 }
 
-main .promo .carbon-neutral .logo-image figure {
+main .promo .carbon_neutral .logo_image figure {
   background-image: url(../img/title_carbon_neutral_large.png);
 }
 
-main .promo .apple-watch-se .logo-image figure {
+main .promo .apple_watch_se .logo_image figure {
   background-image: url(../img/title_apple_watch_se_large.png);
 }
 
 /* airpods-pro영역 텍스트 컬러 지정 */
-main .promo .airpods-pro .title_wrap .subhead {
+main .promo .airpods_pro .title_wrap .subhead {
   color: #f5f5f7;
 }
 
-main .promo .airpods-pro .title_wrap .cta>a {
+main .promo .airpods_pro .title_wrap .cta>a {
   color: #2997ff;
 }
 
 /* airpods-pro 배경색 설정 */
-main .promo .airpods-pro {
+main .promo .airpods_pro {
   background-color: #000;
 }
 
@@ -426,39 +426,39 @@ main .promo .image_wrap {
   height: 366px;
 }
 
-main .promo .airpods-pro .image_wrap {
+main .promo .airpods_pro .image_wrap {
   width: 100%;
   height: 392px;
 }
 
-main .promo .macbook-air-15 .image_wrap,
+main .promo .macbook_air_15 .image_wrap,
 main .promo .ipad .image_wrap {
   width: 100%;
   height: 408px;
 }
 
 /* 이미지 삽입 */
-main .promo .apple-watch-ultra-2 .apple-watch-ultra-2-image {
+main .promo .apple_watch_ultra_2 .apple_watch_ultra_2_image {
   background-image: url(../img/promo_apple_watch_ultra2_large.jpg);
 }
 
-main .promo .carbon-neutral .carbon-neutral-image {
+main .promo .carbon_neutral .carbon_neutral_image {
   background-image: url(../img/promo_carbon_neutral__large.jpg);
 }
 
-main .promo .apple-watch-se .apple-watch-se-image {
+main .promo .apple_watch_se .apple_watch_se_image {
   background-image: url(../img/promo_apple_watch_se_large.jpg);
 }
 
-main .promo .airpods-pro .airpods-pro-image {
+main .promo .airpods_pro .airpods_pro_image {
   background-image: url(../img/promo_airpods_pro__large.jpg);
 }
 
-main .promo .macbook-air-15 .macbook-air-15-image {
+main .promo .macbook_air_15 .macbook_air_15_image {
   background-image: url(../img/promo_macbook_air_15_large.jpg);
 }
 
-main .promo .ipad .ipad-image {
+main .promo .ipad .ipad_image {
   background-image: url(../img/promo_ipad_large.jpg);
 }
 
@@ -476,73 +476,73 @@ footer .content {
 }
 
 /* footer-top 영역 */
-footer .footer-top {
+footer .footer_top {
   padding: 1.7rem 0;
   border-bottom: 1px solid #d2d2d7;
 }
 
-footer .footer-top>ul>li {
+footer .footer_top>ul>li {
   padding-bottom: .8rem;
 }
 
 /* footer-nav 영역 */
-footer .footer-nav {
+footer .footer_nav {
   padding-top: 2rem;
 }
 
-footer .footer-nav>ul {
+footer .footer_nav>ul {
   display: flex;
   justify-content: space-between;
 }
 
-footer .footer-nav .footer-nav-title {
+footer .footer_nav .footer_nav_title {
   margin-bottom: .8rem;
   color: #1d1d1f;
 }
 
-footer .footer-nav>ul li {
+footer .footer_nav>ul li {
   padding-bottom: .8rem;
 }
 
-footer .footer-nav .footer-nav-item-2 {
+footer .footer_nav .footer_nav_item_2 {
   padding-top: 2.4rem;
 }
 
 /* footer-bottom 영역 */
-.footer-bottom .footer-bottom-shop {
+.footer_bottom .footer_bottom_shop {
   border-bottom: 1px solid #d2d2d7;
   padding-bottom: .8rem;
 }
 
-.footer-bottom-legal {
+.footer_bottom_legal {
   display: flex;
   margin: .5rem 0;
 }
 
-.footer-bottom-legal ul {
+.footer_bottom_legal ul {
   display: flex;
   margin-left: 3rem;
 }
 
-.footer-bottom-legal ul li {
+.footer_bottom_legal ul li {
   display: inline-block;
   border-right: 1px solid #86868b;
   margin-right: .7rem;
 }
 
-.footer-bottom-legal ul li>a {
+.footer_bottom_legal ul li>a {
   padding-right: 1rem;
 }
 
-.footer-bottom-contact {
+.footer_bottom_contact {
   padding-bottom: 2rem;
 }
 
-.footer-bottom-contact ul {
+.footer_bottom_contact ul {
   display: flex;
 }
 
-.footer-bottom-contact ul li {
+.footer_bottom_contact ul li {
   font-size: 1.1rem;
   color: #999999;
   padding-right: .5rem;

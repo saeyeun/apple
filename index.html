@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> -->
   <title>Apple</title>
   <!-- 외부 스타일시트 연결 -->
   <link rel="stylesheet" href="css/style.css">
@@ -26,7 +25,7 @@
   <header>
     <nav class="nav">
       <!-- mobile menu -->
-      <ul class="nav-list nav-list-mobile">
+      <ul class="nav_list nav_list_mobile">
         <li class="logo">
           <a href="#">
             <svg viewBox="0 0 14 44" xmlns="http://www.w3.org/2000/svg">
@@ -36,29 +35,29 @@
             </svg>
           </a>
         </li>
-        <li class="nav-items">
-          <a href="#" class="nav-itmes-search">
+        <li class="nav_items">
+          <a href="#" class="nav_itmes_search">
             <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
               <path
                 d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
               </path>
             </svg>
           </a>
-          <a href="#" class="nav-items-bag">
+          <a href="#" class="nav_items_bag">
             <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
               </path>
             </svg>
           </a>
-          <div class="mobile-menu">
-            <span class="mobile-menu-top line"></span>
-            <span class="mobile-menu-bottom line"></span>
+          <div class="mobile_menu">
+            <span class="mobile_menu_top line"></span>
+            <span class="mobile_menu_bottom line"></span>
           </div>
         </li>        
       </ul>
       <!-- desktop menu -->
-      <ul class="nav-list nav-list-desktop">
+      <ul class="nav_list nav_list_desktop">
         <li class="logo">
           <a href="#">
             <svg viewBox="0 0 14 44" xmlns="http://www.w3.org/2000/svg">
@@ -78,8 +77,8 @@
         <li><a href="#">엔터테인먼트</a></li>
         <li><a href="#">액세서리</a></li>
         <li><a href="#">고객지원</a></li>
-        <li class="nav-items">
-          <a href="#" class="nav-itmes-search">
+        <li class="nav_items">
+          <a href="#" class="nav_itmes_search">
             <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
               <path
                 d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
@@ -87,8 +86,8 @@
             </svg>
           </a>
         </li>
-        <li class="nav-items">
-          <a href="#" class="nav-items-bag">
+        <li class="nav_items">
+          <a href="#" class="nav_items_bag">
             <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
@@ -117,7 +116,7 @@
     <!-- hero section start-->
     <section class="hero">
       <!-- iphone15pro 영역 -->
-      <div class="iphone-15-pro">
+      <div class="iphone_15_pro">
         <div class="container">
           <a href="https://www.apple.com/kr/iphone-15-pro/"></a>
           <div class="title_wrap">
@@ -125,21 +124,21 @@
             <h3 class="subhead">티타늄. 초강력. 초경량. 초프로.</h3>
             <p class="callout">출시일 추후 공개</p>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="iPhone 15 pro 더 알아보기">
+              <a class="cta_links" href="#" aria-label="iPhone 15 pro 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="iPhone 15 pro 가격 보기">
+              <a class="cta_links" href="#" aria-label="iPhone 15 pro 가격 보기">
                 가격 보기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="iphone-15-pro-image"></figure>
+            <figure class="iphone_15_pro_image"></figure>
           </div>
         </div>
       </div>
       <!-- iphone15 영역 -->
-      <div class="iphone-15">
+      <div class="iphone_15">
         <div class="container">
           <a href="https://www.apple.com/kr/iphone-15/"></a>
           <div class="title_wrap">
@@ -147,40 +146,40 @@
             <h3 class="subhead">새로운 카메라. 새로운 디자인. 새로움이 물씬.</h3>
             <p class="callout">출시일 추후 공개</p>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="iPhone 15 더 알아보기">
+              <a class="cta_links" href="#" aria-label="iPhone 15 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="iPhone 15 가격 보기">
+              <a class="cta_links" href="#" aria-label="iPhone 15 가격 보기">
                 가격 보기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="iphone-15-image"></figure>
+            <figure class="iphone_15_image"></figure>
           </div>
         </div>
       </div>
       <!-- apple watch 영역 -->
-      <div class="apple-watch">
+      <div class="apple_watch">
         <div class="container">
           <a href="https://www.apple.com/kr/apple-watch-series-9/"></a>
           <div class="title_wrap">
-            <h2 class="logo-image headline">
+            <h2 class="logo_image headline">
               <figure></figure>
             </h2>
             <h3 class="subhead">보다 똑똑. 보다 또렷. 보다 강력.</h3>
             <p class="callout">출시일 추후 공개</p>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="apple watch 더 알아보기">
+              <a class="cta_links" href="#" aria-label="apple watch 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="apple watch 가격 보기">
+              <a class="cta_links" href="#" aria-label="apple watch 가격 보기">
                 가격 보기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="apple-watch-image"></figure>
+            <figure class="apple_watch_image"></figure>
           </div>
         </div>
       </div>
@@ -188,75 +187,75 @@
     <!-- hero section end -->
     <!-- promo section start -->
     <section class="promo">
-      <div class="apple-watch-ultra-2">
+      <div class="apple_watch_ultra_2">
         <div class="container">
           <a href="#"></a>
           <div class="title_wrap">
-            <h4 class="logo-image headline">
+            <h4 class="logo_image headline">
               <figure></figure>
             </h4>
             <h5 class="subhead">한 차원 높은 모험.</h5>
             <p class="callout">출시일 추후 공개</p>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="apple watch 더 알아보기">
+              <a class="cta_links" href="#" aria-label="apple watch 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="apple watch 가격 보기">
+              <a class="cta_links" href="#" aria-label="apple watch 가격 보기">
                 가격 보기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="apple-watch-ultra-2-image"></figure>
+            <figure class="apple_watch_ultra_2_image"></figure>
           </div>
         </div>
       </div>
-      <div class="carbon-neutral">
+      <div class="carbon_neutral">
         <div class="container">
           <a href="#"></a>
           <div class="title_wrap">
-            <h4 class="logo-image headline">
+            <h4 class="logo_image headline">
               <figure></figure>
             </h4>
             <h5 class="subhead">Apple 최초의<br>탄소 중립 제품 등장.</h5>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="carbon neutral 더 알아보기">
+              <a class="cta_links" href="#" aria-label="carbon neutral 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="carbon neutral에 대한 동영상 보기">
+              <a class="cta_links" href="#" aria-label="carbon neutral에 대한 동영상 보기">
                 동영상 보기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="carbon-neutral-image"></figure>
+            <figure class="carbon_neutral_image"></figure>
           </div>
         </div>
       </div>
-      <div class="apple-watch-se">
+      <div class="apple_watch_se">
         <div class="container">
           <a href="#"></a>
           <div class="title_wrap">
-            <h4 class="logo-image headline">
+            <h4 class="logo_image headline">
               <figure></figure>
             </h4>
             <h5 class="subhead">부담 없이 빠져들다.</h5>
             <p class="callout">9월 22일 출시</p>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="apple watch se 더 알아보기">
+              <a class="cta_links" href="#" aria-label="apple watch se 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="apple watch se 지금 주문하기">
+              <a class="cta_links" href="#" aria-label="apple watch se 지금 주문하기">
                 지금 주문하기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="apple-watch-se-image"></figure>
+            <figure class="apple_watch_se_image"></figure>
           </div>
         </div>
       </div>
-      <div class="airpods-pro">
+      <div class="airpods_pro">
         <div class="container">
           <a href="https://www.apple.com/kr/airpods-pro/"></a>
           <div class="title_wrap">
@@ -266,20 +265,20 @@
             <h5 class="subhead">전에 없던 청취 경험. 적응형 오디오.</h5>
             <p class="callout">출시일 추후 공개</p>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="airpods pro 더 알아보기">
+              <a class="cta_links" href="#" aria-label="airpods pro 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="airpods pro 지금 주문하기">
+              <a class="cta_links" href="#" aria-label="airpods pro 지금 주문하기">
                 가격 보기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="airpods-pro-image"></figure>
+            <figure class="airpods_pro_image"></figure>
           </div>
         </div>
       </div>
-      <div class="macbook-air-15">
+      <div class="macbook_air_15">
         <div class="container">
           <a href="https://www.apple.com/kr/macbook-air-13-and-15-m2/"></a>
           <div class="title_wrap">
@@ -289,16 +288,16 @@
             <h5 class="subhead">크게 펼치고, 얇게 접다.</h5>
             <p class="callout">출시일 추후 공개</p>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="macbook air 15 더 알아보기">
+              <a class="cta_links" href="#" aria-label="macbook air 15 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="macbook air 15 구입하기">
+              <a class="cta_links" href="#" aria-label="macbook air 15 구입하기">
                 구입하기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="macbook-air-15-image"></figure>
+            <figure class="macbook_air_15_image"></figure>
           </div>
         </div>
       </div>
@@ -312,16 +311,16 @@
             <h5 class="subhead">쓰다. 그리다. 빠져들다.</h5>
             <p class="callout">출시일 추후 공개</p>
             <div class="cta">
-              <a class="cta-links" href="#" aria-label="ipad 더 알아보기">
+              <a class="cta_links" href="#" aria-label="ipad 더 알아보기">
                 더 알아보기
               </a>
-              <a class="cta-links" href="#" aria-label="ipad 구입하기">
+              <a class="cta_links" href="#" aria-label="ipad 구입하기">
                 구입하기
               </a>
             </div>
           </div>
           <div class="image_wrap">
-            <figure class="ipad-image"></figure>
+            <figure class="ipad_image"></figure>
           </div>
         </div>
       </div>
@@ -374,7 +373,7 @@
   </main>
   <footer>
     <div class="content">
-      <div class="footer-top">
+      <div class="footer_top">
         <ul>
           <li>1. ₩1,060,000은 iPhone 14 Pro Max 1TB 모델의 보상 판매 금액으로,
             보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다.
@@ -393,11 +392,11 @@
           </li>
         </ul>
       </div>
-      <nav class="footer-nav">
-        <ul class="footer-nav-list">
-          <li class="footer-nav-item">
-            <div class="footer-nav-item-1">
-              <h4 class="footer-nav-title">쇼핑 및 알아보기</h4>
+      <nav class="footer_nav">
+        <ul class="footer_nav_list">
+          <li class="footer_nav_item">
+            <div class="footer_nav_item_1">
+              <h4 class="footer_nav_title">쇼핑 및 알아보기</h4>
               <ul>
                 <li><a href="#">스토어</a></li>
                 <li><a href="#">Mac</a></li>
@@ -410,25 +409,25 @@
                 <li><a href="#">액세서리</a></li>
               </ul>
             </div>
-            <div class="footer-nav-item-2">
-              <h4 class="footer-nav-title">Apple 지갑</h4>
+            <div class="footer_nav_item_2">
+              <h4 class="footer_nav_title">Apple 지갑</h4>
               <ul>
                 <li><a href="#">지갑</a></li>
                 <li><a href="#">Apple Pay</a></li>
               </ul>
             </div>
           </li>
-          <li class="footer-nav-item">
-            <div class="footer-nav-item-1">
-              <h4 class="footer-nav-title">계정</h4>
+          <li class="footer_nav_item">
+            <div class="footer_nav_item_1">
+              <h4 class="footer_nav_title">계정</h4>
               <ul>
                 <li><a href="#">Apple ID 관리</a></li>
                 <li><a href="#">Apple Store 계정</a></li>
                 <li><a href="#">iCloud.com</a></li>
               </ul>
             </div>
-            <div class="footer-nav-item-2">
-              <h4 class="footer-nav-title">엔터테인먼트</h4>
+            <div class="footer_nav_item_2">
+              <h4 class="footer_nav_title">엔터테인먼트</h4>
               <ul>
                 <li><a href="#">Apple One</a></li>
                 <li><a href="#">Apple TV+</a></li>
@@ -441,8 +440,8 @@
               </ul>
             </div>
           </li>
-          <li class="footer-nav-item">
-            <h4 class="footer-nav-title">Apple Store</h4>
+          <li class="footer_nav_item">
+            <h4 class="footer_nav_title">Apple Store</h4>
               <ul>
                 <li><a href="#">매장 찾기</a></li>
                 <li><a href="#">Genius Bar</a></li>
@@ -456,16 +455,16 @@
                 <li><a href="#">쇼핑 도움말</a></li>
               </ul>
           </li>
-          <li class="footer-nav-item">
-            <div class="footer-nav-item-1">
-              <h4 class="footer-nav-title">비즈니스</h4>
+          <li class="footer_nav_item">
+            <div class="footer_nav_item_1">
+              <h4 class="footer_nav_title">비즈니스</h4>
               <ul>
                 <li><a href="#">Apple과 비즈니스</a></li>
                 <li><a href="#">비즈니스를 위한 제품 쇼핑하기</a></li>
               </ul>
             </div>
-            <div class="footer-nav-item-2">
-              <h4 class="footer-nav-title">교육</h4>
+            <div class="footer_nav_item_2">
+              <h4 class="footer_nav_title">교육</h4>
               <ul>
                 <li><a href="#">Apple과 교육</a></li>
                 <li><a href="#">초중고용 제품 쇼핑하기</a></li>
@@ -473,9 +472,9 @@
               </ul>
             </div>
           </li>
-          <li class="footer-nav-item">
-            <div class="footer-nav-item-1">
-              <h4 class="footer-nav-title">Apple의 가치관</h4>
+          <li class="footer_nav_item">
+            <div class="footer_nav_item_1">
+              <h4 class="footer_nav_title">Apple의 가치관</h4>
               <ul>
                 <li><a href="#">손쉬운 사용</a></li>
                 <li><a href="#">교육</a></li>
@@ -484,8 +483,8 @@
                 <li><a href="#">협력업체에 대한 책임</a></li>
               </ul>
             </div>
-            <div class="footer-nav-item-2">
-              <h4 class="footer-nav-title">Apple 정보</h4>
+            <div class="footer_nav_item_2">
+              <h4 class="footer_nav_title">Apple 정보</h4>
               <ul>
                 <li><a href="#">Newsroom</a></li>
                 <li><a href="#">Apple 리더십</a></li>
@@ -499,11 +498,11 @@
           </li>
         </ul>
       </nav>
-      <div class="footer-bottom">
-        <div class="footer-bottom-shop">
+      <div class="footer_bottom">
+        <div class="footer_bottom_shop">
           다양한 쇼핑 방법: <a href="#">Apple Store를 방문</a>하거나, <a href="#">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
         </div>
-        <div class="footer-bottom-legal">
+        <div class="footer_bottom_legal">
           <div>Copyright © 2023 Apple Inc. 모든 권리 보유.</div>
           <ul>
             <li><a href="#">개인정보 처리방침</a></li>
@@ -513,7 +512,7 @@
             <li><a href="#">사이트 맵</a></li>
           </ul>
         </div>
-        <div class="footer-bottom-contact">
+        <div class="footer_bottom_contact">
           <ul>
             <li>사업자등록번호 : 120-81-84429</li>
             <li>통신판매업신고번호 : 제 2011-서울강남-00810호</li>
