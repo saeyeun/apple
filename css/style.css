@@ -37,6 +37,14 @@ h2 {
   font-family: 'Inter', sans-serif;
 }
 
+header ul,
+main ul,
+footer ul {
+  margin-top: 0;
+  padding-left: 0;
+
+}
+
 /* header 영역------ */
 header {
   width: 100%;
@@ -462,6 +470,36 @@ main .promo .ipad .ipad_image {
   background-image: url(../img/promo_ipad_large.jpg);
 }
 
+/* mainSlide (swaiper-slider) 영역 설정 */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 60%;
+}
+
+.swiper-button {
+  display: none;
+}
+
 /* 푸터 영역 ----------*/
 footer {
   width: 100%;
@@ -548,3 +586,5 @@ footer .footer_nav .footer_nav_item_2 {
   padding-right: .5rem;
   border-right: 1px solid #999999;
 }
+
+

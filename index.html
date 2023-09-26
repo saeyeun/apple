@@ -6,17 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple</title>
   <!-- 외부 스타일시트 연결 -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/res.css">
-  <link rel="stylesheet" type="text/css" href="css/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"> -->
   
   <!-- 폰트어썸 CDN -->
   <script src="https://kit.fontawesome.com/85ac904405.js" crossorigin="anonymous"></script>
   
   <!-- 외부 스크립크 연결 -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
+  <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
   <script src="js/script.js"></script>
 </head>
 
@@ -327,7 +331,63 @@
     </section>
     <!-- promo section end -->
     <section class="mainSlide">
-      <div class="item">
+      <div class="swiper mainSwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="img/mainslider1-small.jpg" media="(max-width: 734px)" />
+              <img src="img/mainslider1.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="img/mainslider2-small.jpg" media="(max-width: 734px)" />
+              <img src="img/mainslider2.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="img/mainslider3-small.jpg" media="(max-width: 734px)" />
+              <img src="img/mainslider3.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="img/mainslider4-small.jpg" media="(max-width: 734px)" />
+              <img src="img/mainslider4.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="img/mainslider5-small.jpg" media="(max-width: 734px)" />
+              <img src="img/mainslider5.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="img/mainslider6-small.jpg" media="(max-width: 734px)" />
+              <img src="img/mainslider6.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="img/mainslider1-small.jpg" media="(max-width: 734px)" />
+              <img src="img/mainslider7.jpg" alt="">
+            </picture>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+      
+      </div>
+      <!-- <div class="item">
         <picture>
           <source srcset="img/mainslider1-small.jpg" media="(max-width: 734px)" />
           <img src="img/mainslider1.jpg" alt="">
@@ -368,7 +428,7 @@
           <source srcset="img/mainslider7-small.jpg" media="(max-width: 734px)" />
           <img src="img/mainslider7.jpg" alt="">
         </picture>
-      </div>
+      </div> -->
     </section>
   </main>
   <footer>
@@ -525,6 +585,28 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mainSwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop: true, // 무한 반복
+      autoplay: { //오토플레이 설정
+        delay: 1500,  //딜레이 시간 설정
+        disableOnInteraction: false,
+      },
+      speed: 1500,
+      navigation: { // 네비게이션 설정
+        nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+        prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+      },
+    });
+  </script>
 </body>
 
 </html>

@@ -159,6 +159,24 @@
     background-image: url(../img/promo_ipad_medium.jpg);
   }
 
+  /* mainSlide (swaiper-slider) 영역 설정 */
+  .swiper {
+    width: 100%;
+    height: 380px;
+  }
+
+  .slick-list {
+    width: 100%;
+    height: 380px;
+  }
+
+  .swiper-slide img {
+    /* 이미지 크기 */
+    width: 704px;
+    height: 367px;
+    display: block;
+  }
+
   /* 푸터영역 ----- */
   footer .content {
     padding: 0 14px;
@@ -289,10 +307,11 @@
   }
 
   /* 푸터영역 설정-------- */
-  footer .footer_nav_list{
+  footer .footer_nav_list {
     display: flex;
     flex-direction: column;
   }
+
   footer .footer_nav .footer_nav_item {
     padding: 0;
   }
@@ -313,7 +332,7 @@
   footer .footer_bottom_legal ul {
     margin: 0;
     margin-top: 0.6rem;
-  } 
+  }
 }
 
 @media screen and (max-width : 734px) {
@@ -498,6 +517,28 @@
 
   main .promo .macbook_air_15 .macbook_air_15_image {
     background-image: url(../img/promo_macbook_air_15_small.jpg);
+  }
+
+  /* mainSlide (swaiper-slider) 영역 설정 */
+  .swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+  .slick-list {
+    width: 100%;
+    height: 500px;
+  }
+
+  .swiper-slide img {
+    /* 이미지 크기 */
+    width: 274px;
+    height: 495px;
+    display: block;
+  }
+
+  .swiper-button {
+    display: block;
   }
 
 }
