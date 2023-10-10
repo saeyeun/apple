@@ -578,6 +578,7 @@ footer .footer_nav .footer_nav_item_2 {
 
 .footer_bottom_contact ul {
   display: flex;
+  margin-bottom: 1.2rem;
 }
 
 .footer_bottom_contact ul li {
@@ -585,6 +586,10 @@ footer .footer_nav .footer_nav_item_2 {
   color: #999999;
   padding-right: .5rem;
   border-right: 1px solid #999999;
+}
+
+.footer_bottom_contact strong {
+  font-size: 1.8rem;
 }
 
 
